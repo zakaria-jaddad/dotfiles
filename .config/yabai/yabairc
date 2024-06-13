@@ -22,8 +22,10 @@ yabai -m config mouse_action2 resize
 
 # float system preferences
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Applications$" manage=off
 
 echo "yabai configuration loaded.."

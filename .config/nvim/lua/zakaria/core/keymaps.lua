@@ -4,6 +4,8 @@ local keymap = vim.keymap
 
 -- set "kj" as Escape in Insert Mode
 keymap.set("i", "kj", "<ESC>", { desc = "Exit Insert Mode" })
+-- set "KJ" as Escape in Insert Mode
+keymap.set("i", "KJ", "<ESC>", { desc = "Exit Insert Mode" })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true

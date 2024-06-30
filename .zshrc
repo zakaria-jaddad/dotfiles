@@ -73,4 +73,5 @@ alias lst='exa -T' # Set lst to be like tree command
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias zed="open -a /Applications/Zed.app -n" # Set zed to open Zed Text editor
+alias z="zathura"
 

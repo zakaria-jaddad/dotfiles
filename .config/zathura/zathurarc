@@ -1,5 +1,11 @@
-
-set selection-clipboard clipboard
+set font                    "monospace 12"
+set selection-clipboard     clipboard
+set selection-notification	"true"
+set guioptions			        "sv"
+set scroll-page-aware       "true"
+set statusbar-home-tilde	  "true"
+set recolor			            "true"
+set adjust-open			        "width"
 set statusbar-h-padding 0
 set statusbar-v-padding 0
 
@@ -9,3 +15,5 @@ map i recolor
 map r reload
 map q quit
 map p print
+
+include catppuccin

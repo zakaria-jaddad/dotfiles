@@ -170,8 +170,8 @@ return {
       },
     })
 
-    require("illuminate").on_attach = function(client)
-      return client
-    end
+    -- require("illuminate").on_attach = function(client)
+    --   return client
+    -- end
   end,
 }

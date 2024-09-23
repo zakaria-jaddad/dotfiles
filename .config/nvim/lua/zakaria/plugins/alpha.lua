@@ -51,6 +51,7 @@ return {
       dashboard.button("m", " " .. "Mason", ":Mason <CR>"),
       dashboard.button("l", "󰚰 " .. "LazyUI", ":Lazy <CR>"),
       dashboard.button("w", "󰁯 " .. "Restore Session", "<cmd>SessionRestore<CR>"),
+      dashboard.button("q", "󰅚 " .. "Quit", "<cmd>:exit<CR>"),
     }
     for _, button in ipairs(dashboard.section.buttons.val) do
       button.opts.hl = "AlphaButtons"

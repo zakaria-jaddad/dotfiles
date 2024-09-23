@@ -15,7 +15,7 @@ return {
 
     -- enable mason and configure icons
     mason.setup({
-      ui = {
+        ui = {
         icons = {
           package_installed = "✓",
           package_pending = "➜",
@@ -54,7 +54,7 @@ return {
         "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
-        --
+
         -- linters
         "pylint",
         "eslint_d",

@@ -15,7 +15,7 @@ return {
 
     -- enable mason and configure icons
     mason.setup({
-        ui = {
+      ui = {
         icons = {
           package_installed = "✓",
           package_pending = "➜",
@@ -30,7 +30,7 @@ return {
         "typos_lsp", -- All
         "clangd", -- C & C++
         "rust_analyzer", -- rust
-        "tsserver", -- Javascript & Typescritp
+        "ts_ls", -- Javascript & Typescritp
         "gopls", -- Go
         "html", -- html
         "cssls", -- css

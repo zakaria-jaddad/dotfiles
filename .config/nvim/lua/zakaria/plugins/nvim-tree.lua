@@ -51,14 +51,14 @@ return {
 
     -- This makes NvimTree Slow AF
     -- keymap.set("n", "<leader>eef", "<cmd>NvimTreeFindFile<CR>", { desc = "Find current file in the file explorer" })
-    keymap.set(
-      "n",
-      "<leader>ee",
-      "<cmd>NvimTreeToggle<CR>",
-      { desc = "Open or close the tree. Takes an optional path argument" }
-    )
-    keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Open file explorer with current file" })
-    keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
-    keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
+    -- keymap.set(
+    --   "n",
+    --   "<leader>ee",
+    --   "<cmd>NvimTreeToggle<CR>",
+    --   { desc = "Open or close the tree. Takes an optional path argument" }
+    -- )
+    keymap.set("n", "<leader>e", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Open file explorer with current file" })
+    -- keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
+    -- keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
   end,
 }

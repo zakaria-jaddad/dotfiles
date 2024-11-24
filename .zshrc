@@ -62,16 +62,26 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -lah $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --icons -lah $realpath'
 
 # Aliases
 alias c="clear"
 alias cls="clear & ls"
 alias n='nvim' # Set n to open neovim
-alias ls='exa' # Set ls to exa batter ls command
-alias lst='exa -T' # Set lst to be like tree command
+alias ls="eza --icons -lah"
+alias lst='eza -T' # Set lst to be like tree command
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias zed="open -a /Applications/Zed.app -n" # Set zed to open Zed Text editor
 alias z="zathura"
 alias mini='~/mini-moulinette/mini-moul.sh'
+
+
+PATH=~/.console-ninja/.bin:$PATH
+PATH=$PATH:$(go env GOPATH)/bin
+
+USER="zajaddad"
+
+alias francinette=/Users/zakariajaddad/francinette/tester.sh
+
+alias paco=/Users/zakariajaddad/francinette/tester.sh

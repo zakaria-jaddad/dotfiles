@@ -21,7 +21,7 @@ opt.cmdheight = 0
 opt.ignorecase = true
 opt.smartcase = true
 
--- setting undeline in the current cursoline
+-- setting underline in the current cursoline
 -- opt.cursorline = true
 
 opt.termguicolors = true

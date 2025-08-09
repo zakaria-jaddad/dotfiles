@@ -39,3 +39,5 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Bufferline
 keymap.set("n", "<leader>bl", ":BufferLinePick<CR>", { desc = "Select buffer from current buffers" })
+
+vim.keymap.set("n", "<leader>pf", 'oprintf("\\n");<Esc>', { noremap = true, silent = true })

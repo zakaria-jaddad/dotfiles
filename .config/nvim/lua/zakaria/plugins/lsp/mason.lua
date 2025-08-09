@@ -29,35 +29,13 @@ return {
       ensure_installed = {
         "typos_lsp", -- All
         "clangd", -- C & C++
-        "rust_analyzer", -- rust
-        "ts_ls", -- Javascript & Typescritp
         "gopls", -- Go
-        "html", -- html
-        "cssls", -- css
-        "tailwindcss", -- tailwindcss
-        "svelte", -- svelte
-        "lua_ls", -- lua_ls
-        "graphql",
-        "prismals", -- prisma ORM
-        "pyright", -- python
-        "marksman", -- makdown
-        "intelephense", -- php
-        "sqls", --SQL
-        "jsonls", -- json
-        "emmet_ls",
+        "lua_ls",
       },
     })
-
     mason_tool_installer.setup({
       ensure_installed = {
-        "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
-
-        -- linters
-        "pylint",
-        "eslint_d",
       },
     })
   end,

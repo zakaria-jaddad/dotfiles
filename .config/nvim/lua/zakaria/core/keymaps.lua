@@ -18,7 +18,7 @@ keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnosti
 keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic Quickfix list" })
 
 --  See `:help wincmd` for a list of all window commands
---  Toggle between winodws
+--  Toggle between windows
 keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
@@ -39,3 +39,11 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Bufferline
 keymap.set("n", "<leader>bl", ":BufferLinePick<CR>", { desc = "Select buffer from current buffers" })
+
+-- Force Uppercase as Lowercase
+vim.api.nvim_create_user_command("W", "w", {})
+vim.api.nvim_create_user_command("WQ", "wq", {})
+vim.api.nvim_create_user_command("Wq", "wq", {})
+vim.api.nvim_create_user_command("Wqa", "wqa", {})
+vim.api.nvim_create_user_command("WQa", "wqa", {})
+vim.api.nvim_create_user_command("WQA", "wqa", {})
